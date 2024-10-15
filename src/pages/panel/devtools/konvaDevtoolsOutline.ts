@@ -75,6 +75,13 @@ export default function konvaDevtoolsOutline(devtools: KonvaDevtools) {
 
       for (const stage of devtools.Konva().stages) {
         results.push(buildTree(stage));
+
+        // @ts-expect-error: Unreachable code error
+        if (!stage.getContainer()) {
+          stage.setContainer('.konvajs-content');
+        }
+
+        stage.batchDraw();
       }
       return results;
     },
