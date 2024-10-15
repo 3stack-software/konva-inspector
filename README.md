@@ -1,3 +1,12 @@
+# Custom Install
+
+<div align="center">
+  <img style="width: 100%;" src="images/screenshots/dev-install.png" />
+</div>
+
+- Enable dev mode
+- Load the dist folder
+
 <div align="center">
 <img src="public/icon128.png" alt="logo"/>
 <h1>Konva Devtools</h1>
