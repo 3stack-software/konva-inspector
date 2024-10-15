@@ -1,0 +1,1 @@
+console.log("background loaded");chrome.runtime.onMessage.addListener(function(o,n){o.type==="__KONVA_DEVTOOLS__BROADCAST_RESULT"&&chrome.action.setIcon({path:`../../../icon32${o.result?"":"_black"}.png`,tabId:n.tab.id})});
